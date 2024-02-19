@@ -35,3 +35,6 @@ After deploy just open up the browser and refer to the full name of your website
 https://testforrobinpython.azurewebsites.net/
 
 
+Testing the OpenAPI use /openai/<question> with a GET call
+
+
