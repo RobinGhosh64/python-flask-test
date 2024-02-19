@@ -1,10 +1,34 @@
 # Deploy a Python (Flask) web app to Azure App Service - Sample Application
 
-This is the sample Flask application for the Azure Quickstart [Deploy a Python (Django or Flask) web app to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python). For instructions on how to create the Azure resources and deploy the application to Azure, refer to the Quickstart article.
+This is the sample Flask application for testing chatgpt. Please use your key in the code for it to work.
 
-Sample applications are available for the other frameworks here:
+If you need an free Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
 
-* Django [https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart)
-* FastAPI [https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart)
 
-If you need an Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
+Create Azure Web App for Python
+
+# Change these values to the ones that you want to use 
+# Then run the commands as follows:
+
+RESOURCE_GROUP_NAME='my-rsg-1'
+APP_SERVICE_NAME='testforrobinpython'
+
+az webapp deploy \
+    --name $APP_SERVICE_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --src-path <zip-file-path>
+
+
+
+Deploying the python code to Azure via AZ cli
+
+# Change these values to the ones that you want to use 
+# Then run the commands as follows:
+
+RESOURCE_GROUP_NAME='my-rsg-1'
+APP_SERVICE_NAME='testforrobinpython'
+
+az webapp deploy \
+    --name $APP_SERVICE_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --src-path <zip-file-path>
