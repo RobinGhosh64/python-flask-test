@@ -29,7 +29,7 @@ def hello():
        return redirect(url_for('index'))
 
 @app.route('/openai/<question>', methods=['GET'])
-def callchatgpt(id: int):
+def callchatgpt(question):
   response = openai.ChatCompletion.create(
         model="gpt-4",
         stream=True,
