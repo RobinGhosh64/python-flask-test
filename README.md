@@ -10,7 +10,7 @@ Create Azure Web App for Python
 # Change these values to the ones that you want to use 
 # Then run the command as follows:
 
-RESOURCE_GROUP_NAME='my-rsg-1'
+RESOURCE_GROUP_NAME='my-rsg-1' \
 APP_SERVICE_NAME='testforrobinpython'
 
 az webapp create \
