@@ -5,10 +5,10 @@ This is the sample Flask application for testing chatgpt. Please use your key in
 If you need an free Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
 
 
-Create Azure Web App for Python
+# Create Azure Web App for Python
 
-# Change these values to the ones that you want to use 
-# Then run the command as follows:
+Change these values based on your instance name and resource group 
+Then run the command as follows:
 
 RESOURCE_GROUP_NAME='my-rsg-1' \
 APP_SERVICE_NAME='testforrobinpython'
@@ -18,10 +18,10 @@ az webapp create \
     --name $APP_SERVICE_NAME \
     --linux-fx-version "PYTHON|3.9.12" --sku B1
 
-Deploying the python code to Azure via AZ cli
+# Deploying the python code to Azure via AZ cli
 
-# Change these values to the ones that you want to use 
-# Then run the commands as follows:
+Change these values based on your instance name and resource group 
+Then run the command as follows:
 
 RESOURCE_GROUP_NAME='my-rsg-1'
 APP_SERVICE_NAME='testforrobinpython'
@@ -37,5 +37,12 @@ https://testforrobinpython.azurewebsites.net/
 
 Testing the OpenAPI please use the following end point via POSTMAN or curl commands 
 /openai/<question> with a GET call
+
+
+
+# Deploying the python code to Azure via AZ download publish profile
+
+On the overview page of the web app, use the Download Publish Profile to donwload the file
+File has userid/password that can be used to push the zip file to the App Service
 
 
